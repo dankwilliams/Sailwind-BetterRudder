@@ -1,0 +1,10 @@
+# Visual Studio / IDE
+[Oo]bj/
+[Bb]in/
+*.user
+*.suo
+*.sln.docstates
+
+# BepInEx / Unity build artifacts
+*.dll
+packages/
