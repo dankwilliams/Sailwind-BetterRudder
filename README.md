@@ -1,20 +1,19 @@
 # Sailwind - BetterRudder
 
-A BepInEx mod for **Sailwind** that isolates rudder performance to the player's active vessel and dynamically adjusts rudder authority and sideways drag.
+A BepInEx mod for **Sailwind** that dynamically adjusts rudder authority and drag. Made mostly to counteract the effects of BetterDrag.
 
 ---
 
 ## Features
-* **Active Vessel Isolation:** Utilizes `GameState.currentBoat` to ensure patches apply only to the vessel you are currently sailing.
-* **Smart Index Matching:** Uses strict numeric index matching (`(index)`) to prevent substring collisions between similar boat names.
-* **Rate-Limited Logging:** Keeps your log files clean by throttling diagnostic output.
+* **Adjust Rudder Power and Drag:** Ability to independently adjust both how hard the rudder turns the boat and how much drag is caused by turning.
+* **Per Ship Config:** Can set up different profiles for individual ships.
 
 ---
 
 ## Installation
 1. Install [BepInEx](https://builds.bepinex.dev/) for Sailwind.
 2. Download the latest `BetterRudder.dll` from the **Releases** section.
-3. Place `BetterRudder.dll` into your `Sailwind/BepInEx/plugins/` folder.
+3. Place BetterRudder folder into your `Sailwind/BepInEx/plugins/` folder.
 4. Launch the game!
 
 ---
