@@ -15,7 +15,7 @@ namespace BetterRudder
     {
         public const string PLUGIN_GUID = "com.dank.sailwind.BetterRudder";
         public const string PLUGIN_NAME = "BetterRudder";
-        public const string PLUGIN_VERSION = "1.0.40";
+        public const string PLUGIN_VERSION = "1.0.41";
 
         public static BetterRudderPlugin Instance { get; private set; }
 
@@ -34,17 +34,17 @@ namespace BetterRudder
                 Debug.Log("[BetterRudder] === INITIALIZING PLUGIN v1.0.40 ===");
 
                 GlobalRudderMultiplier = Config.Bind(
-                    "Global Defaults", "RudderMultiplier", 2.0f,
+                    "Global Defaults", "RudderMultiplier", 1.0f,
                     "Default global multiplier for rudder power."
                 );
 
                 GlobalDragPowerMultiplier = Config.Bind(
-                    "Global Defaults", "DragPowerMultiplier", 0.5f,
+                    "Global Defaults", "DragPowerMultiplier", 1.0f,
                     "Default global multiplier for drag power."
                 );
 
                 EnableDebugLogging = Config.Bind(
-                    "General", "EnableDebugLogging", true,
+                    "General", "EnableDebugLogging", false,
                     "Logs active ship name and applied multipliers once every 10 seconds."
                 );
 
@@ -69,10 +69,6 @@ namespace BetterRudder
             if (!File.Exists(configPath))
             {
                 string exampleJson = @"{
-  ""20"": {
-    ""RudderPowerMultiplier"": 2.0,
-    ""SidewaysDragMultiplier"": 0.5
-  },
   ""187"": {
     ""RudderPowerMultiplier"": 3.0,
     ""SidewaysDragMultiplier"": 0.25
