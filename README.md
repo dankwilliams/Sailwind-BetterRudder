@@ -1,6 +1,7 @@
 # Sailwind - BetterRudder
 
 A BepInEx mod for **Sailwind** that dynamically adjusts rudder authority and drag. Made mostly to counteract the effects of BetterDrag.
+*Disclaimer: This mod is made with Google Gemini AI*
 
 ---
 
