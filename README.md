@@ -13,7 +13,7 @@ A BepInEx mod for **Sailwind** that dynamically adjusts rudder authority and dra
 
 ## Installation
 1. Install [BepInEx](https://builds.bepinex.dev/) for Sailwind.
-2. Download the latest `BetterRudder.dll` from the **Releases** section.
+2. Download the latest release from the **Releases** section.
 3. Place BetterRudder folder into your `Sailwind/BepInEx/plugins/` folder.
 4. Launch the game!
 
